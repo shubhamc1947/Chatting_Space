@@ -1,0 +1,133 @@
+
+.chatlobby-cont{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+.chatlobby-wrap{
+    width:430px;
+    box-shadow: 0px 0px 10px 0px rgb(139 139 139);
+    padding:1rem;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    color:#737373;
+}
+.form-header{
+    font-family: 'Nova Square', sans-serif;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color:#333;
+    padding-block: 0.8rem;
+    border-bottom: 1.5px solid #7da5d9;
+    position:relative;
+    margin-bottom:1rem;
+}
+.or{
+    position:absolute;
+    font-size:1rem;
+    font-family: 'Nova Square', sans-serif;
+    left:50%;
+    top:85%;
+    color:#737373;
+    transform: translateX(-50%);
+}
+.profile-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:0.5rem;
+    position:relative;
+    padding-bottom:0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1.5px solid #7da5d9;
+}
+.profile-header>.profile-dp>img{
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 2px 1px #333;
+    border:1px solid #333;
+}
+
+.profile-header>.profile-name>.name{
+    font-size: 1.3rem;
+    color:#333;
+    font-weight: bolder;
+}
+.profile-header>.profile-name>.status{
+    text-align: justify;
+}
+.profile-logout>a{
+    background-color: #333;
+    color:rgb(216, 216, 216);
+    outline:none;
+    border:1px solid #222;
+    padding-block:0.3rem;
+    cursor:pointer;
+    padding:0.4rem;
+    border-radius: 5px;
+}
+
+.lobby{
+    position: absolute;
+    top:87%;
+    left:50%;
+    transform: translateX(-50%);
+
+}
+
+/* chat-lobby css */
+.chat-lobby{
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+.chat-person{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 0.5rem;
+    padding: 0.5rem;
+    background: aliceblue;
+    border-radius: 6px;
+    border: 1px solid #7da5d9;
+}
+.chat-person-dp{
+    display: flex;
+    gap:1.6rem;
+    align-items: center;
+}
+.chat-person-dp>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 2px 1px #333;
+    border:1px solid #333;
+}
+.chat-person-msg{
+    font-size:0.8rem;
+}
+.chat-person-active{
+    margin-right: 1rem;
+}
+.chat-person-active>.active{
+    width: 12px;
+    height: 12px;
+    background-color: green;
+    border-radius: 50%;
+    
+}
+
+.chat-person-active>.deactive{
+    width: 12px;
+    height: 12px;
+    background-color: gray;;
+    border-radius: 50%;
+    
+}
+

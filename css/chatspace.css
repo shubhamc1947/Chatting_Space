@@ -1,0 +1,125 @@
+
+.chatlobby-cont{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+.chatlobby-wrap{
+    width:370px;
+    box-shadow: 0px 0px 10px 0px rgb(139 139 139);
+    padding:1rem;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    color:#737373;
+}
+
+.profile-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap:4rem; */
+    position:relative;
+    padding-bottom:0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1.5px solid #7da5d9;
+}
+.profile-header>.profile-dp>img{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 2px 1px #333;
+    border:1px solid #333;
+}
+
+.profile-header>.profile-name>.name{
+    font-size: 1.3rem;
+    color:#333;
+    font-weight: bolder;
+}
+.profile-header>.profile-name>.status{
+    text-align: justify;
+}
+
+.lobby{
+    position: absolute;
+    top:87%;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+/* chat-lobby css */
+.chat-lobby{
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.chatting-cont{
+    height: 60vh;
+    background: #fff;
+    border-radius: 5px;
+    padding: 0.4rem;
+    display:flex;
+    align-content:space-between;
+    /* justify-content: space-between; */
+    flex-direction: column;
+}
+
+.msg{
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px; 
+}
+.sent{
+    background-color: #e1f5fe;
+    align-self: flex-end;
+}
+.received{
+    background-color: #f0f0f0;
+    align-self: flex-start;
+}
+/* .sentmsg{
+    border: 1px solid #333;
+    border-radius: 5px 5px 0px 4px;
+    width: 80%;
+    padding: 0.1rem 0.2rem;
+    color: #333;
+} */
+.nomsg{
+    height:60%;
+    background-color: #80808075;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sendmsg{
+    position:relative;
+}
+.sendmsg>input{
+    border-radius:0 0 5px 5px;
+    border:none;
+    outline: none;
+    border:0.4px solid;
+    /* padding-right:0.4rem; */
+    width:290px;
+    
+}
+.sendmsgbtn{
+    position:absolute;
+    top:2.5px;right:-1px;
+}
+#submit{
+    background-color: #333;
+    color:rgb(216, 216, 216);
+    outline:none;
+    border:1px solid #222;
+    /* padding-block:0.3rem; */
+    cursor:pointer;
+    padding:0.12rem 0.4rem;
+    border-radius:0 5px 5px 0;
+}
